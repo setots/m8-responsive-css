@@ -6,11 +6,45 @@ see http://stackoverflow.com/questions/6871996/css-two-inline-block-width-50-ele
 }
 
 
+
 /* Box sizing */
 
 * {
     box-sizing: border-box;
 }
 
+.wrapper {
+	font size: 2rem;
+	display: inline-block;
+	width: 100%;
+	border: 2px solid white;
+	background: #dad9d9
+}
+
+#photo {
+	height: 400px;
+	background: gray;
+}
+
+#photo p {
+	font-size: 2rem;
+	text-align: center;
+	color: white;
+
+}
+@media screen and (min-width:768px) {
+	.wraper {
+		width: 50%;
+
+	}
+	#photo p{
+		display: none;
+	}
+	#photo {
+		background-image: url('../imgs/peacock.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+	}
+}
 
 /* Assign styles here */
